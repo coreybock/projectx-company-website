@@ -1,10 +1,23 @@
 import React from "react";
+import * as s from "./Footer.style"
+
+import SocialsButton from "@Components/SocialButtons/SocialButtons"
 
 const Footer = (props) => {
     return (
-        <div className="Footer-Container">
-            I am footer
-        </div>
+        <s.FooterContainer>
+           <s.FooterTop>
+               <s.FooterTopContent>
+                   <s.FooterTitle>Gopher Industries</s.FooterTitle>
+                   <s.FooterSocials>
+                       <SocialsButton />
+                   </s.FooterSocials>
+               </s.FooterTopContent>
+           </s.FooterTop>
+            <s.FooterBottom>
+                © Copyright Gopher Industries. All Rights Reserved
+            </s.FooterBottom>
+        </s.FooterContainer>
     );
 };
 

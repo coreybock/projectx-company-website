@@ -8,13 +8,16 @@ export const HeaderContainer = styled.div`
   display:flex;
   align-content: center;
   justify-content: center;
+  box-sizing: border-box;
+  z-index:9999;
+  background-color:white;
 `
 
 export const InnerHeader = styled.div`
   max-width:1140px;
   width:1140px;
   display:flex;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items: center;
 `
 

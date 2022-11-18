@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "@Layout/Header/Header";
 import Footer from "@Layout/Footer/Footer";
+import ScrollButton from "@Components/ScrollButton/ScrollButton";
 
 const Layout = (props) => {
     return (
@@ -9,6 +10,7 @@ const Layout = (props) => {
             <Header />
             <Outlet />
             <Footer />
+            <ScrollButton />
         </div>
     );
 };
