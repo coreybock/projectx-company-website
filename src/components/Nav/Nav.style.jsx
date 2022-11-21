@@ -17,13 +17,13 @@ export const Link = styled(NavLink)`
   font-size: 14px;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
-  color: #5c768d;
+  color: ${props => props.$barsolid ? "#5c768d" : "white"};
   
   &:hover {
-    color:#1ab4fc;
+    color:#2ecc71;
   }
   
   &.active {
-    color:#1ab4fc;
+    color:#2ecc71;
   }
 `

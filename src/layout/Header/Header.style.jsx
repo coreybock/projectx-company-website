@@ -10,7 +10,7 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   box-sizing: border-box;
   z-index:9999;
-  background-color:white;
+  transition:all 0.3s ease;
 `
 
 export const InnerHeader = styled.div`
