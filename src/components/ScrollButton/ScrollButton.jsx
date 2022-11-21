@@ -1,9 +1,6 @@
 import React, {useState} from 'react';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import IconButton from "@mui/material/IconButton";
-
 import * as s from "./ScrollButton.style";
-import {StyledIcon} from "./ScrollButton.style";
 
 const ScrollButton = () => {
     const [visible, setVisible] = useState(false)

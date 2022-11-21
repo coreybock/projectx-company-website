@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Slide} from "hero-slider";
+
 
 export const SlideContent = styled.div`
   position:absolute;
