@@ -23,7 +23,7 @@ export const VideoOverlay = styled(motion.div)`
   position:absolute;
   left: 50%;
   top:30%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 0) !important;
   text-align: center;
   
   > input {

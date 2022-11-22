@@ -3,7 +3,7 @@ import IconButton from "@mui/material/IconButton";
 
 export const Container = styled.div`
    position: fixed;
-   right: 40px;
+   left: 30px;
    bottom: 80px;
    height: 20px;
    font-size: 3rem;
