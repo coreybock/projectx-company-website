@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import * as s from "./Header.style";
-import logoSrc from "@Assets/images/logo_white_3.png";
+import logoSrc from "@Assets/images/full-white-2.png";
 import Nav from "@Components/Nav/Nav";
 
 const Header = (props) => {
