@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-  background: #587187;
+  background: #0a1e38;
   color: #fff;
   font-size: 14px;
   width:100%;
@@ -9,9 +9,7 @@ export const FooterContainer = styled.div`
 `
 
 export const FooterTop = styled.div`
-  background: #5c768d;
-  border-top: 1px solid #768fa6;
-  border-bottom: 1px solid #67839c;
+  background: #0a1e38;
   padding: 60px 0 30px 0;
   box-sizing:border-box;
   display:flex;
@@ -41,4 +39,18 @@ export const FooterSocials = styled.div`
 export const FooterBottom = styled.div`
   text-align: center;
   padding:30px 0 30px 0;
+  font-family: "Open Sans",sans-serif;
+`
+
+export const FooterTopLeft = styled.div`
+`
+
+export const FooterTopRight = styled.div`
+  width:600px;
+  text-align: center;
+  font-family: "Open Sans",sans-serif;
+`
+export const Logo = styled.img`
+  height:55px;
+  padding-bottom:20px;
 `

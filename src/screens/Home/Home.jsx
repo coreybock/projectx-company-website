@@ -1,46 +1,60 @@
-import React, {useState} from "react";
-import HeroSlider, {Nav, Overlay, Slide} from "hero-slider";
+import React from "react";
+import HomeVideo from "@Assets/videos/connections.mp4";
+import AboutVideo from "@Assets/videos/about.mp4";
+import LogoAnimate from "@Assets/images/logo-2.png";
 
-import slide1 from "@Assets/hero/slide-1.png";
-import slide2 from "@Assets/hero/slide-2.png";
-import slide3 from "@Assets/hero/slide-3.png";
 
 import * as s from "./Home.style";
+import Button from "@Components/Button/Button";
+import TechStackSection from "@Components/TechStackSection/TechStackSection";
 
-const Home = (props) => {
-    const slideContent = [
-        "Welcome to GOPHER INDUSTRIES", "Building Healthier Communities", "Using Enabling Technologies"
-    ];
-    const [activeSlideContent, setActiveSlideContent] = useState(slideContent[0]);
-
+const Home = () => {
 
     return (
-        <div className="Home-Container">
-            <HeroSlider
-                height={"calc(100vh - 114px)"}
-                width={"100%"}
-                autoplay
-                animations={{
-                    slidingAnimation:'fade'
-                }}
-                controller={{
-                    initialSlide: 1,
-                    slidingDuration: 500,
-                    slidingDelay: 100,
-                    onSliding: (nextSlide) => setActiveSlideContent(slideContent[nextSlide-1]),
-                }}
-            >
-                <Overlay>
-                    <s.SlideContent>
-                        <s.SlideHeader>{activeSlideContent}</s.SlideHeader>
-                    </s.SlideContent>
-                </Overlay>
-                <Slide background={{ backgroundImageSrc: slide1, backgroundImageSizes:'cover', backgroundImageBlendMode:'overlay' }} />
-                <Slide background={{ backgroundImageSrc: slide2, backgroundImageSizes:'contain' }} />
-                <Slide background={{ backgroundImageSrc: slide3 }} />
-                <Nav />
-            </HeroSlider>
-        </div>
+        <s.HomeContainer>
+            <s.HomeVideo>
+                <video src={HomeVideo} width="100%" controls={false} autoPlay={true} loop={true} muted={true}></video>
+                <s.VideoOverlay initial={{y:"-300px", opacity:0}} animate={{y:0, opacity:1, transform:"translate(-50%,0)"}} transition={{duration:0.8, delay:0.3, ease: [0, 0.71, 0.2, 1.01]}}>
+                    <s.VideoOverlayText>
+                        Building healthier communities through enabling technologies.
+                    </s.VideoOverlayText>
+                    <Button type="anchor" link={"home-page"} placeholder={"Learn More"} name={"Learn-More"} id={"learn-more"} />
+                </s.VideoOverlay>
+            </s.HomeVideo>
+            <s.HomeContentWide id={"home-page"}>
+                <s.HomeCol>
+                    <s.HomeTitleContainer>
+                        <s.HomeTitle style={{color:"#1ab4fc"}}>GOPHER<br/>INDUSTRIES</s.HomeTitle>
+                        <s.HomeTitle style={{color:"#5c768d"}}>INNOVATING LIVES</s.HomeTitle>
+                    </s.HomeTitleContainer>
+                </s.HomeCol>
+                <s.HomeCol style={{backgroundColor:"#0a1e38"}}>
+                    <s.AnimatedLogo src={LogoAnimate} alt={"Logo"} />
+                </s.HomeCol>
+            </s.HomeContentWide>
+            <s.HomeContentWideImage2>
+                <TechStackSection />
+            </s.HomeContentWideImage2>
+            <s.HomeContentWideGradient id={"about-us"}>
+                <s.HomeCol>
+                    <s.HomeColAlign>
+                        <s.HomeTitle style={{color:"#0a1e38", marginBottom:"20px"}}><span style={{color:"white"}}>WHO IS</span><br/>GROPHER<br/>INDUSTRIES?</s.HomeTitle>
+                        <s.HomeSubTitle>
+                            Gopher Industries is a Deakin University-owned company dedicated to providing consultancy and software solutions that make people's lives easier.
+                        </s.HomeSubTitle>
+                        <s.HomeSubTitle>
+                            <strong>Our vision</strong> is to build healthier communities through enabling technologies.
+                        </s.HomeSubTitle>
+                        <s.HomeSubTitle>
+                            <strong>Our mission</strong> is to develop innovative products to monitor, diagnose and manage health and well-being using state-of-the-art wearable technology, IoT and AI solutions to improve people's health and enable better access to healthcare for the elderly, disadvantaged and disabled.
+                        </s.HomeSubTitle>
+                    </s.HomeColAlign>
+                </s.HomeCol>
+                <s.HomeCol>
+                    <s.AboutVideo src={AboutVideo} controls={true} />
+                </s.HomeCol>
+            </s.HomeContentWideGradient>
+        </s.HomeContainer>
     );
 };
 

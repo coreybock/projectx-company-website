@@ -8,10 +8,7 @@ import PageContainer, {PageHeader} from "@Layout/Page/Page.style"
 
 import RoomOutlinedIcon from '@mui/icons-material/RoomOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import PhoneInTalkOutlinedIcon from '@mui/icons-material/PhoneInTalkOutlined';
-
-
-
+import PhoneCallbackOutlinedIcon from '@mui/icons-material/PhoneCallbackOutlined';
 
 const ContactUs = () => {
 
@@ -29,7 +26,7 @@ const ContactUs = () => {
                     <IconCard icon={<EmailOutlinedIcon />} heading={"Email Us"} size={"small"} animate={true}>
                         bahar.nakisa@deakin.edu.au<br/>karmakar@deakin.edu.au
                     </IconCard>
-                    <IconCard icon={<PhoneInTalkOutlinedIcon />} heading={"Call Us"} size={"small"} animate={true}>
+                    <IconCard icon={<PhoneCallbackOutlinedIcon />} heading={"Call Us"} size={"small"} animate={true}>
                         Bahareh Nakisa +613 5227 3816<br/>Chandan Karmakar +613 5227 3079
                     </IconCard>
                 </s.ContactUsRow>
