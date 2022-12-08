@@ -1,9 +1,12 @@
 import React from "react";
 import HomeVideo from "@Assets/videos/connections.mp4";
+import AboutVideo from "@Assets/videos/about.mp4";
+import LogoAnimate from "@Assets/images/logo-2.png";
+
 
 import * as s from "./Home.style";
 import Button from "@Components/Button/Button";
-import {PageHeader} from "@Layout/Page/Page.style";
+import TechStackSection from "@Components/TechStackSection/TechStackSection";
 
 const Home = () => {
 
@@ -15,16 +18,42 @@ const Home = () => {
                     <s.VideoOverlayText>
                         Building healthier communities through enabling technologies.
                     </s.VideoOverlayText>
-                    <Button placeholder={"Learn More"} name={"Learn-More"} id={"learn-more"} />
+                    <Button type="anchor" link={"home-page"} placeholder={"Learn More"} name={"Learn-More"} id={"learn-more"} />
                 </s.VideoOverlay>
             </s.HomeVideo>
-            <s.HomeContent>
-                <PageHeader>Home Page</PageHeader>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis sapien tortor, a porttitor massa iaculis ut. Suspendisse scelerisque elementum rhoncus. Sed vestibulum vitae augue quis varius. Donec id eleifend libero. Mauris ut diam sem. Mauris sit amet sem at metus elementum iaculis. Mauris eleifend dapibus scelerisque. Nunc vitae arcu tempor enim imperdiet laoreet.
-                In vitae imperdiet felis. Cras id lobortis mi. Quisque ultricies pharetra pretium. Quisque auctor ante id lorem faucibus, in commodo nibh posuere. Aliquam erat volutpat. Nullam eget nunc est. Curabitur sed neque posuere, tincidunt purus sit amet, tristique arcu. Sed semper purus nibh, et pellentesque diam aliquam ut. Pellentesque ante neque, varius ac interdum at, molestie eget purus. Proin dapibus egestas luctus. Nam euismod varius orci, vitae imperdiet orci dignissim in. Suspendisse pulvinar commodo augue ac dignissim. Proin iaculis, lacus ac accumsan interdum, ante orci efficitur purus, nec commodo enim nibh eu nulla. Fusce sit amet fermentum orci, in vestibulum est. Aliquam mattis risus in ex ullamcorper, vitae tincidunt metus pharetra.
-                Donec vel eros ac libero fringilla porttitor vitae sit amet ante. Fusce et mi ut libero efficitur efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi hendrerit ornare orci, et malesuada erat tempor at. Ut eros ipsum, faucibus faucibus maximus at, vehicula a nulla. Suspendisse facilisis mattis ligula. In et turpis pharetra, iaculis velit a, varius libero. Integer posuere ornare mi, et hendrerit orci finibus quis. Cras sagittis magna lorem, quis tempus sem malesuada eu. Duis venenatis bibendum ex, non ultricies nulla vestibulum condimentum. Aenean lobortis pharetra dignissim. Mauris viverra ipsum nisl, sed imperdiet lacus bibendum vel. Nunc nunc massa, porta ut varius nec, porttitor vitae massa.
-                </div>
-            </s.HomeContent>
+            <s.HomeContentWide id={"home-page"}>
+                <s.HomeCol>
+                    <s.HomeTitleContainer>
+                        <s.HomeTitle style={{color:"#1ab4fc"}}>GOPHER<br/>INDUSTRIES</s.HomeTitle>
+                        <s.HomeTitle style={{color:"#5c768d"}}>INNOVATING LIVES</s.HomeTitle>
+                    </s.HomeTitleContainer>
+                </s.HomeCol>
+                <s.HomeCol style={{backgroundColor:"#0a1e38"}}>
+                    <s.AnimatedLogo src={LogoAnimate} alt={"Logo"} />
+                </s.HomeCol>
+            </s.HomeContentWide>
+            <s.HomeContentWideImage2>
+                <TechStackSection />
+            </s.HomeContentWideImage2>
+            <s.HomeContentWideGradient id={"about-us"}>
+                <s.HomeCol>
+                    <s.HomeColAlign>
+                        <s.HomeTitle style={{color:"#0a1e38", marginBottom:"20px"}}><span style={{color:"white"}}>WHO IS</span><br/>GROPHER<br/>INDUSTRIES?</s.HomeTitle>
+                        <s.HomeSubTitle>
+                            Gopher Industries is a Deakin University-owned company dedicated to providing consultancy and software solutions that make people's lives easier.
+                        </s.HomeSubTitle>
+                        <s.HomeSubTitle>
+                            <strong>Our vision</strong> is to build healthier communities through enabling technologies.
+                        </s.HomeSubTitle>
+                        <s.HomeSubTitle>
+                            <strong>Our mission</strong> is to develop innovative products to monitor, diagnose and manage health and well-being using state-of-the-art wearable technology, IoT and AI solutions to improve people's health and enable better access to healthcare for the elderly, disadvantaged and disabled.
+                        </s.HomeSubTitle>
+                    </s.HomeColAlign>
+                </s.HomeCol>
+                <s.HomeCol>
+                    <s.AboutVideo src={AboutVideo} controls={true} />
+                </s.HomeCol>
+            </s.HomeContentWideGradient>
         </s.HomeContainer>
     );
 };

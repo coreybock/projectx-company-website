@@ -13,17 +13,34 @@ export const NavListItem = styled.li`
 
 export const Link = styled(NavLink)`
   text-decoration: none;
-  transition: 0.3s;
+  transition: all ease 0.3s;
   font-size: 14px;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   color: ${props => props.$barsolid ? "#5c768d" : "white"};
   
   &:hover {
-    color:#2ecc71;
+    color: ${props => props.$barsolid ? "#1ab4fc" : "#2ecc71"};
   }
   
   &.active {
-    color:#2ecc71;
+    color: ${props => props.$barsolid ? "#1ab4fc" : "#2ecc71"};
+  }
+`
+
+export const ExternalLink = styled.a`
+  text-decoration: none;
+  transition: all ease 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: ${props => props.$barsolid ? "#5c768d" : "white"};
+
+  &:hover {
+    color: ${props => props.$barsolid ? "#1ab4fc" : "#2ecc71"};
+  }
+
+  &.active {
+    color: ${props => props.$barsolid ? "#1ab4fc" : "#2ecc71"};
   }
 `

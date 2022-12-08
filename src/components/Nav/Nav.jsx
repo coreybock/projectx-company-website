@@ -1,7 +1,7 @@
 import React from "react";
 
 import * as s from "./Nav.style";
-
+import AnchorLink from "@Components/AnchorLink/AnchorLink";
 
 const Nav = (props) => {
     const { barsolid } = props;
@@ -12,13 +12,16 @@ const Nav = (props) => {
                     <s.Link $barsolid={barsolid} to={""} end>Home</s.Link>
                 </s.NavListItem>
                 <s.NavListItem>
-                    <s.Link $barsolid={barsolid} to={"/about-us"}>About Us</s.Link>
+                    <AnchorLink type={"nav"} link={"about-us"} barsolid={barsolid}>About Us</AnchorLink>
                 </s.NavListItem>
                 <s.NavListItem>
                     <s.Link $barsolid={barsolid} to={"/products"}>Products</s.Link>
                 </s.NavListItem>
                 <s.NavListItem>
                     <s.Link $barsolid={barsolid} to={"/contact-us"}>Contact Us</s.Link>
+                </s.NavListItem>
+                <s.NavListItem>
+                    <s.ExternalLink $barsolid={barsolid} href={"https://gorgeous-dragon-4d0ca6.netlify.app/"} target="_blank">Login</s.ExternalLink>
                 </s.NavListItem>
             </s.NavList>
         </div>
