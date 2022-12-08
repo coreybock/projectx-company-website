@@ -12,9 +12,6 @@ const Nav = (props) => {
                     <s.Link $barsolid={barsolid} to={""} end>Home</s.Link>
                 </s.NavListItem>
                 <s.NavListItem>
-                    <AnchorLink type={"nav"} link={"/#about-us"} barsolid={barsolid}>About Us</AnchorLink>
-                </s.NavListItem>
-                <s.NavListItem>
                     <s.Link $barsolid={barsolid} to={"/products"}>Products</s.Link>
                 </s.NavListItem>
                 <s.NavListItem>

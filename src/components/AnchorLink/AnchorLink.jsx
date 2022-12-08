@@ -16,7 +16,7 @@ const AnchorLink = (props) => {
     };
 
     return (
-        <s.AnchorNavLinkItem $barsolid={barsolid} href={`#${link}`} onClick={handleClick}>About Us</s.AnchorNavLinkItem>
+        <s.AnchorNavLinkItem $barsolid={barsolid} href={`/#${link}`} onClick={handleClick}>About Us</s.AnchorNavLinkItem>
     );
 };
 
