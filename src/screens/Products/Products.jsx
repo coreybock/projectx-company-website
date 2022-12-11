@@ -20,7 +20,7 @@ const Products = () => {
                     <s.ProductText>Our company is producing a range of products that meet the goals and objectives of the company.</s.ProductText>
                     <s.ProductItemsContainer>
                         <s.ProductItemsRow>
-                            <ProductTile icon={<MedicationLiquidIcon />} title={"MediMind"} subtitle={"Medication Management and Reminder App"} link={"products/medimind"} linkTitle={"View More"} />
+                            <ProductTile icon={<MedicationLiquidIcon />} title={"MediMind"} subtitle={"Medication Management and Reminder App"} link={"medimind"} linkTitle={"View More"} />
                             <ProductTile icon={<CollectionsBookmarkIcon />} title={"Apollo Database"} subtitle={"Standardised Patient History Database"} link={"products/apollo"} linkTitle={"View More"}  />
                             <ProductTile icon={<HealthAndSafetyIcon />} title={"Guardian App"} subtitle={"Elderly Assistance App"} link={"products/guardian"} linkTitle={"View More"} />
                         </s.ProductItemsRow>
