@@ -20,11 +20,11 @@ export const Link = styled(NavLink)`
   color: ${props => props.$barsolid ? "#5c768d" : "white"};
   
   &:hover {
-    color: ${props => props.$barsolid ? "#1ab4fc" : "#2ecc71"};
+    color: ${props => props.$barsolid ? "#1ab4fc" : "#1ab4fc"};
   }
   
   &.active {
-    color: ${props => props.$barsolid ? "#1ab4fc" : "#2ecc71"};
+    color: ${props => props.$barsolid ? "#1ab4fc" : "#1ab4fc"};
   }
 `
 

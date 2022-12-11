@@ -1,42 +1,33 @@
 import React from "react";
 import * as s from "./ContactUs.style";
+import HomeVideo from "@Assets/videos/connections.mp4";
 
-import IconCard from "@Components/IconCard/IconCard";
-import Card from "@Components/Card/Card";
 import ContactForm from "@Components/ContactForm/ContactForm";
-import PageContainer, {PageHeader} from "@Layout/Page/Page.style"
 
-import RoomOutlinedIcon from '@mui/icons-material/RoomOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import PhoneCallbackOutlinedIcon from '@mui/icons-material/PhoneCallbackOutlined';
 
 const ContactUs = () => {
 
 
     return (
-        <PageContainer>
-            <s.ContactUsContainer>
-                <s.ContactUsRow>
-                    <PageHeader>Contact Us</PageHeader>
-                </s.ContactUsRow>
-                <s.ContactUsRow>
-                    <IconCard icon={<RoomOutlinedIcon />} heading={"Find Us"} callToAction={"Deakin's Burwood Campus"} size={"medium"} animate={true}>
-                            221 Burwood Hwy, Burwood VIC 3125
-                    </IconCard>
-                    <IconCard icon={<EmailOutlinedIcon />} heading={"Email Us"} size={"small"} animate={true}>
-                        bahar.nakisa@deakin.edu.au<br/>karmakar@deakin.edu.au
-                    </IconCard>
-                    <IconCard icon={<PhoneCallbackOutlinedIcon />} heading={"Call Us"} size={"small"} animate={true}>
-                        Bahareh Nakisa +613 5227 3816<br/>Chandan Karmakar +613 5227 3079
-                    </IconCard>
-                </s.ContactUsRow>
-                <s.ContactUsRow>
-                    <Card animate={true}>
-                        <ContactForm />
-                    </Card>
-                </s.ContactUsRow>
-            </s.ContactUsContainer>
-        </PageContainer>
+        <s.ContactUsContainer>
+            <s.ContactUsInnerContainer>
+                <s.ContactUsTop>
+                    <s.ContactUsRow>
+                        <s.ContactPageHeader>Contact Us</s.ContactPageHeader>
+                        <s.ContactPageText>Our team will be happy to answer all your questions. <br/> Fill out the form below and
+                            we’ll be in touch as soon as possible</s.ContactPageText>
+                        <s.ContactPageForm>
+                            <s.FloatingRow>
+                                <ContactForm />
+                            </s.FloatingRow>
+                        </s.ContactPageForm>
+                    </s.ContactUsRow>
+                    <s.ContactUsVideo src={HomeVideo} width="100%" controls={false} autoPlay={true} loop={true} muted={true}/>
+                </s.ContactUsTop>
+                <s.ContactUsBottom />
+            </s.ContactUsInnerContainer>
+        </s.ContactUsContainer>
+
     );
 };
 

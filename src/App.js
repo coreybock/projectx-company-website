@@ -4,7 +4,8 @@ import Layout from "@Layout/Layout/Layout";
 
 import Home from "@Screens/Home/Home";
 import ContactUs from "@Screens/ContactUs/ContactUs";
-import AboutUs from "@Screens/AboutUs/AboutUs";
+import CompanyTimeline from "@Screens/CompanyTimeline/CompanyTimeline";
+import StudentTimeline from "@Screens/StudentTimeline/StudentTimeline";
 import NotFound from "@Screens/NotFound/NotFound";
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
               <Route element={<Layout />}>
                   <Route path={"/"} element={<Home />} />
                   <Route path={"/contact-us"} element={<ContactUs />} />
-                  <Route path={"/about-us"} element={<AboutUs />} />
+                  <Route path={"/company-timeline"} element={<CompanyTimeline />} />
+                  <Route path={"/student-timeline"} element={<StudentTimeline />} />
                   <Route path={"*"} element={<NotFound />} />
               </Route>
           </Routes>

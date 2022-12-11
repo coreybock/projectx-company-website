@@ -16,6 +16,7 @@ export const TextArea = styled.textarea`
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   outline: none;
   box-sizing: border-box;
+  font-family: Arial,serif;
 
   &:focus {
     color: #495057;

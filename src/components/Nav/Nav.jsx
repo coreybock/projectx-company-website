@@ -15,6 +15,12 @@ const Nav = (props) => {
                     <s.Link $barsolid={barsolid} to={"/products"}>Products</s.Link>
                 </s.NavListItem>
                 <s.NavListItem>
+                    <s.Link $barsolid={barsolid} to={"/company-timeline"}>Company Timeline</s.Link>
+                </s.NavListItem>
+                <s.NavListItem>
+                    <s.Link $barsolid={barsolid} to={"/student-timeline"}>Student Timeline</s.Link>
+                </s.NavListItem>
+                <s.NavListItem>
                     <s.Link $barsolid={barsolid} to={"/contact-us"}>Contact Us</s.Link>
                 </s.NavListItem>
                 <s.NavListItem>
