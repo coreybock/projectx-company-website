@@ -19,7 +19,7 @@ function App() {
                   <Route path={"/"} element={<Home />} />
                   <Route path={"/contact-us"} element={<ContactUs />} />
                   <Route path={"/products"} element={<Products />} />
-                  <Route path={"/medimind"} element={<Medimind />} />
+                  <Route path={"/products/medimind"} element={<Medimind />} />
                   <Route path={"/company-timeline"} element={<CompanyTimeline />} />
                   <Route path={"/student-timeline"} element={<StudentTimeline />} />
                   <Route path={"*"} element={<NotFound />} />
