@@ -1,7 +1,6 @@
 import React from "react";
 
 import * as s from "./Nav.style";
-import AnchorLink from "@Components/AnchorLink/AnchorLink";
 
 const Nav = (props) => {
     const { barsolid } = props;
