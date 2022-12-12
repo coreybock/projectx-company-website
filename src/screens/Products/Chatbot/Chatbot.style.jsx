@@ -138,7 +138,7 @@ export const ProductSubColumns = styled.div`
   gap:20px;
   
   > div {
-    max-width:33%;
+    width:25%;
   }
 `
 
