@@ -19,7 +19,7 @@ const ProductTile = (props) => {
 };
 
 ProductTile.propTypes = {
-    icon: PropTypes.shape.isRequired,
+    icon: PropTypes.node.isRequired,
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
     link: PropTypes.string,

@@ -26,7 +26,7 @@ const Products = () => {
                         </s.ProductItemsRow>
                         <s.ProductItemsRow>
                             <ProductTile icon={<HeadsetMicIcon />} title={"Chatbot System"} subtitle={"Remote Health Monitoring"} link={"products/chatbot"} linkTitle={"View More"} />
-                            <ProductTile icon={<SickIcon />} title={"Pain Assessment"} subtitle={"AI powered pain assessor"} link={"products/painasessment"} linkTitle={"View More"} />
+                            <ProductTile icon={<SickIcon />} title={"Pain Assessment"} subtitle={"AI powered pain assessor"} link={"products/painassessment"} linkTitle={"View More"} />
                             <ProductTile icon={<SpaIcon />} title={"Diet Planner App"} subtitle={"Elderly diet planner application"} link={"products/dietplanner"} linkTitle={"View More"} />
                         </s.ProductItemsRow>
                     </s.ProductItemsContainer>

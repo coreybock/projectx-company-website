@@ -113,6 +113,7 @@ export const ProductTitle = styled.h1`
 export const ProductText = styled.div`
   color:black;
   font-family: "Open Sans",sans-serif;
+  padding-bottom: 40px;
 `
 
 export const ProductVideo = styled.video`
