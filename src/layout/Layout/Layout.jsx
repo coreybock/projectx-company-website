@@ -6,7 +6,7 @@ import ScrollButton from "@Components/ScrollButton/ScrollButton";
 import { Widget, addResponseMessage } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 
-const Layout = (props) => {
+const Layout = () => {
 
     useEffect(() => {
         addResponseMessage('Welcome to this awesome chat!');
@@ -27,7 +27,7 @@ const Layout = (props) => {
             <Widget
                 handleNewUserMessage={handleNewUserMessage}
                 emojis={false}
-                title={"Project X Chatbot"}
+                title={"Medi Chatbot"}
                 subtitle={"Chat with us!"}
                 showBadge={false}
             />

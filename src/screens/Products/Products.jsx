@@ -25,9 +25,9 @@ const Products = () => {
                             <ProductTile icon={<HealthAndSafetyIcon />} title={"Guardian App"} subtitle={"Elderly Assistance App"} link={"products/guardian"} linkTitle={"View More"} />
                         </s.ProductItemsRow>
                         <s.ProductItemsRow>
-                            <ProductTile icon={<HeadsetMicIcon />} title={"Chatbot System"} subtitle={"Remote Health Monitoring"} link={"products/chatbot"} linkTitle={"View More"} />
+                            <ProductTile icon={<HeadsetMicIcon />} title={"Medi"} subtitle={"Chatbot System for Remote Health Monitoring"} link={"products/chatbot"} linkTitle={"View More"} />
                             <ProductTile icon={<SickIcon />} title={"Pain Assessment"} subtitle={"AI powered pain assessor"} link={"products/painassessment"} linkTitle={"View More"} />
-                            <ProductTile icon={<SpaIcon />} title={"Diet Planner App"} subtitle={"Elderly diet planner application"} link={"products/dietplanner"} linkTitle={"View More"} />
+                            <ProductTile icon={<SpaIcon />} title={"NutriHelp"} subtitle={"Personalised diet planning Android app"} link={"products/dietplanner"} linkTitle={"View More"} />
                         </s.ProductItemsRow>
                     </s.ProductItemsContainer>
                 </s.ProductRow>

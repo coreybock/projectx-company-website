@@ -10,8 +10,8 @@ const Chatbot = () => {
             <s.ProductInnerContainer>
                 <s.ProductTop>
                     <s.ProductRow>
-                        <s.ProductPageHeader>Chatbot System</s.ProductPageHeader>
-                        <s.ProductPageText>Remote Health Monitoring</s.ProductPageText>
+                        <s.ProductPageHeader>Medi</s.ProductPageHeader>
+                        <s.ProductPageText>Chatbot System for Remote Health Monitoring</s.ProductPageText>
                     </s.ProductRow>
                     <s.PageVideo src={HomeVideo} width="100%" controls={false} autoPlay={true} loop={true} muted={true}/>
                 </s.ProductTop>
@@ -22,8 +22,14 @@ const Chatbot = () => {
                                 Product <br/> <span style={{color:"white"}}>Overview</span>
                             </s.ProductTitle>
                             <s.ProductText style={{color:"white"}}>
-                                At Gopher Industries we are creating a Chatbot system that works as a personal assistant for elderly people. This chatbot aims to allow the target audience to interact with the system and ask questions about their health and based on their intentions it will provide solutions. Our app, ‘MediBot’ allows users to adhere to a routine and promote the self-management of their condition without constant doctor or nurse supervision.<br/><br/>
-                                Furthermore, our chatbot will help elderly people to keep records of their reports, handle frequent queries and give quick responses to common queries. Moreover, to accommodate elderly people, our chatbot app has several features which comply with their accessibility requirements. For instance speech to text and text to speech, minimal colours,block writing and more to make the chatbot interactive as well as user-friendly
+                                At Gopher Industries, we have created a chatbot system call “Medi” that works as a personal assistant
+                                for our intended demographic population to interact with the Gopher Suit and act as a frontage that is the
+                                introduction to the products that Gopher houses.<br/><br/>
+                                Medi allows users to chat to it as if it was a human interaction helping them with anything from pain
+                                assessments to water consumption, nutritional advice and log in with their patient ID. Medi is designed for its users being easy to use, interacts in a friendly human way and will
+                                eventually beable to be interacted with via both text and voice – making the product accessible for whoever needs to use it. <br/><br/>
+                                With future implementations and testing of GUI environments that suits our users, it is an exciting time for Medi with graphical implementations and unlimited additions available – Medi is proud to be the face
+                                of the Gopher Range!
                             </s.ProductText>
                         </s.ProductContentLeft>
                         <s.ProductContentRight>
@@ -39,17 +45,21 @@ const Chatbot = () => {
                             </s.ProductTitle>
                             <s.ProductSubColumns>
                                 <s.ProductText>
-                                    <strong>Pain Assessment:</strong><br/><br/>This will be valuable addition by which pain tracking can be done more efficiently and help in listing down the trigger points for specific users which results in better-personalised care. Moreover, a separate assessment will be done to check the level of pain and lastly, all these additional data will be shared with a pain monitoring app for better caretaking of elderly patients.
+                                    <strong>Pain Assessment Questionnaire:</strong><br/><br/>Ability for our users to log and rate their pain assessment to share with authorised health care providers
                                 </s.ProductText>
                                 <s.ProductText>
-                                    <strong>Diet Plan and Data Manipulation:</strong><br/><br/>This feature will help the elderly access their recommended diet plan and perform tasks like grocery shopping and food preparation more efficiently via chatbot. The recommended meal at a specific time can be spoken out by a chatbot which will help the elderly in maintaining their diet.
+                                    <strong>Diet Plan and Tracking:</strong><br/><br/>Users are able to plan, monitor and share their diet plan with their authorised health care providers. It will be a space where they can keep track of their nutrition and diet plans and
+                                    with a quick reference on a day to day basis of their nutritional intake
                                 </s.ProductText>
                                 <s.ProductText>
-                                    <strong>Water Consumption Tracking:</strong><br/><br/>This feature will help the elderly to keep track of their daily water consumption which will help them to stay fit and healthy
+                                    <strong>Water Consumption and Tracking:</strong><br/><br/>For anyone but in particular, the demographic that is using our app, tracking water consumption daily is important. Our MEDI will be able to
+                                    log a daily water goal, graphically retrieve how much their consumption and motivate them along the way to reach their goal!
 
                                 </s.ProductText>
                                 <s.ProductText>
-                                    <strong>Data extraction and representation: </strong><br/><br/>This feature will make elderly people's life more organised because by using their voice commands in the chatbot they can easily access their files such as test results, and financial planning and take necessary steps accordingly.
+                                    <strong>Data extraction and sharing: </strong><br/><br/>Exciting plans are in the works for Medi to be able to hve read and write function to our
+                                    centralised database, meaning that the information that is entered into Medi can be logged to the other Gopher logs and vice versa. Meaning that Medi
+                                    is the centralised product that users can interact with for all of their health needs.
 
                                 </s.ProductText>
                             </s.ProductSubColumns>

@@ -4,10 +4,10 @@ import HomeVideo from "@Assets/videos/connections.mp4";
 import ProductVideoSrc from "@Assets/videos/dietplanapplication.mp4";
 import ProductImage from "@Components/ProductImage/ProductImage";
 
-import Pic1 from "@Assets/images/products/dietplanner/dietplanapp-1.jpg";
-import Pic2 from "@Assets/images/products/dietplanner/dietplanapp-2.jpg";
-import Pic3 from "@Assets/images/products/dietplanner/dietplanapp-3.jpg";
-import Pic4 from "@Assets/images/products/dietplanner/dietplanapp-4.jpg";
+import Pic1 from "@Assets/images/products/dietplanner/nutrihelp-1.png";
+import Pic2 from "@Assets/images/products/dietplanner/nutrihelp-2.png";
+import Pic3 from "@Assets/images/products/dietplanner/nutrihelp-3.png";
+import Pic4 from "@Assets/images/products/dietplanner/nutrihelp-4.png";
 
 
 const DietPlanner = () => {
@@ -17,8 +17,8 @@ const DietPlanner = () => {
             <s.ProductInnerContainer>
                 <s.ProductTop>
                     <s.ProductRow>
-                        <s.ProductPageHeader>Diet Planner App</s.ProductPageHeader>
-                        <s.ProductPageText>Elderly diet planner application</s.ProductPageText>
+                        <s.ProductPageHeader>NutriHelp</s.ProductPageHeader>
+                        <s.ProductPageText>Personalised diet planning Android app</s.ProductPageText>
                     </s.ProductRow>
                     <s.PageVideo src={HomeVideo} width="100%" controls={false} autoPlay={true} loop={true} muted={true}/>
                 </s.ProductTop>
@@ -29,8 +29,7 @@ const DietPlanner = () => {
                                 Product <br/> <span style={{color:"white"}}>Overview</span>
                             </s.ProductTitle>
                             <s.ProductText style={{color:"white"}}>
-                                Team Task Force X’s product focuses on providing the tools seniors require to their independence through nutrition advice and tracking. We aim to help maintain or even improve the health of our users. The phone application, ‘NutriHelp’ will help users track their nutrition and find diet plans which fit their current health issues or concerns. This empowerment to take control of their nutritional health will assist in reducing unnecessary GP visits due to nutrition-related complications and prevent some additional issues arising.<br/><br/>
-                                Our mobile app will take user entered data, including logged food and basic health details, and use this to generate dieting recommendations. With aging comes changes in what our bodies require and here at Team Task Force X, we hope to keep people healthier for longer.
+                                NutriHelp is an Android application that aims to promote healthy eating habits for Australia's senior population, by providing personalised recipes based on the user's specified health conditions and nutritional preferences.<br/><br/> Our goal is to decrease the number of elderly people that are either malnourished or at risk of malnutrition, promote nutritional health through food intake and increase transparency and awareness of our user’s current nutritional health.
                             </s.ProductText>
                         </s.ProductContentLeft>
                         <s.ProductContentRight>
@@ -47,23 +46,23 @@ const DietPlanner = () => {
                             <s.ProductSubColumns>
                                 <s.ProductText>
                                     <s.FeatureList>
-                                        <li>Monitoring and profiling patient activities.</li>
-                                        <li>Alerting caregivers and supervisors during an emergency.</li>
-                                        <li>Predicting potential physical and mental health conditions at an early stage.</li>
+                                        <li>NutriHelp supports our users in managing their general nutritional wellbeing and the management of nutrient-related diseases and deficiencies through personalised nutritional planning.</li>
+                                        <li>We support our user's health through nutrition derived from food, giving more control to the user over their nutritional health.</li>
+                                        <li>The user can shop online within the application using their shopping list or sent it to a family member to collect.</li>
                                     </s.FeatureList>
                                 </s.ProductText>
                                 <s.ProductText>
                                     <s.FeatureList>
-                                        <li>Providing suggestions to see a health professional based on health issue detected.</li>
-                                        <li>Encouraging positive activities.</li>
-                                        <li>Generating weekly and monthly activity dashboard.</li>
+                                        <li>NutriHelp generates nutritional plans by understanding our users' needs. The user tells us their personal characteristics, mobility, nutritional requirements and nutrient-related deficiencies/diseases and we provide nutritional planning, tracking and daily recipes to support the user.</li>
+                                        <li>Users are provided with recipe steps and a convenient shopping list. We provide an abundance of recipes that can be swapped, added, deleted and favourited. </li>
+                                        <li>Our daily recipe plan provides flexibility, select which time of day you would like meals provided, or select your own. </li>
                                     </s.FeatureList>
                                 </s.ProductText>
                                 <s.ProductText>
                                     <s.FeatureList>
-                                        <li>Providing access to accurate real-time visualisation and position of patient(s).</li>
-                                        <li>Ability to define a baseline for a patient.</li>
-                                        <li>User management allowing for defining Patient, Carer, and Admin users.</li>
+                                        <li>The nutritional plan makes sure the user meets and stays within their optimal nutritional targets throughout each day, assisting the user to maintain and improve their health.</li>
+                                        <li>As the users’ health changes over time, their preferences can be updated and the application will respond to their changing health.</li>
+                                        <li>We’ll keep their family/carer and GP up to date with their nutritional health.</li>
                                     </s.FeatureList>
                                 </s.ProductText>
                             </s.ProductSubColumns>
@@ -77,8 +76,8 @@ const DietPlanner = () => {
                                 <span style={{color:"rgb(10,30,56)"}}>Product</span> Benefits
                             </s.ProductTitleWhite>
                             <s.ProductSubColumnsWhite>
-                                <s.ProductText style={{maxWidth:"100%"}}>
-                                    <strong>Convenient, Accurate, Tailored</strong><br/><br/>After the user enters his basic information, our program employs machine learning to formulate a standard diet plan for the user. This is based on the current health of the client and what they need from the food they consume. It will tell the user what and how much they need, along with what foods contain it. The user’s experience is at the core of our product, ensuring goals and recipes are at your fingertips, ready when you are.
+                                <s.ProductText style={{maxWidth:"100%", color:"white"}}>
+                                    <strong>Convenient, Accurate, Tailored</strong><br/><br/>NutriHelp makes sure that our users maintain a healthy, balanced diet specific to their individual needs. It takes away the complicated guesswork and ensures that seniors stay healthy and looked after!
                                 </s.ProductText>
                             </s.ProductSubColumnsWhite>
                         </s.ProductContent>

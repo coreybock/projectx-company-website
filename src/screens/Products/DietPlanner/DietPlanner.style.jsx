@@ -48,7 +48,7 @@ export const ProductTop = styled.div`
 export const PageVideo = styled.video`
   width: 100%;
   height:420px;
-  object-fit: none;
+  object-fit: unset;
   position: fixed;
   left: 0;
   right: 0;

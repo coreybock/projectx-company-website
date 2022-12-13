@@ -22,7 +22,7 @@ const Apollo = () => {
                                 Product <br/> <span style={{color:"white"}}>Overview</span>
                             </s.ProductTitle>
                             <s.ProductText style={{color:"white"}}>
-                                At Gopher Industries we are developing a data lake (i.e., central repository) that various applications within Gopher Industries can utilise for access, storage and retrieval of sensitive personal and health information collated through the various applications offered by Gopher Industries. Our project ‘Apollo’ employs cloud technologies and cybersecurity practices to ensure the confidentiality, integrity and availability of sensitive health data required for the various applications developed internally within Gopher Industries.<br/><br/> While Apollo is currently designed for internal use within Gopher Industries, further development of the Apollo project could facilitate access to third parties (e.g., General Practitioners, Aged and Healthcare providers) through APIs (Application Programming Interface) for better health outcomes for aged persons.<br/><br/>Apollo’s primary market are the internal development teams within Gopher Industries with plans to expand our scope to include authorised GPs, Aged and Healthcare providers.
+                                At Gopher Industries we are developing a central database, called the Apollo Database, (to host and integrate all the company’s products and manage core services across the company. The goal of Team Peacemaker is to provide the Apollo central database to host and integrate Gopher Industries product suite, centrally manage patient history, provide core services company-wide and eventually enable artificial intelligence data analytics on patient data. <br/><br/> The Apollo Database will enable the storage, access, and retrieval of sensitive personal and health information collated through the various applications offered by Gopher Industries. The Apollo Database employs cloud technologies and cybersecurity practices to ensure the confidentiality, integrity and availability of sensitive health data required for the various applications developed internally within Gopher Industries.  <br/><br/>The Apollo Database enables access through APIs (Application Programming Interface) for better health outcomes for aged persons. Additionally, the Apollo Database reduces duplication of effort for core services in Gopher Industries. The Apollo Database will also allow the application of advance artificial intelligence analytics in the future, to provide insights and improved services of Gopher Industries customers.<br/><br/> Apollo’s primary market are the internal development teams within Gopher Industries.
                             </s.ProductText>
                         </s.ProductContentLeft>
                         <s.ProductContentRight>
@@ -56,6 +56,7 @@ const Apollo = () => {
                                         <li>Data Security</li>
                                         <li>Data Analytics</li>
                                         <li>Data Retrieval</li>
+                                        <li>Data Model Management</li>
                                     </s.FeatureList>
                                 </s.ProductText>
                             </s.ProductSubColumns>
@@ -73,6 +74,7 @@ const Apollo = () => {
                                     <s.FeatureListWhite>
                                         <li>Easy for Gopher Industries applications to collect, store and retrieve data</li>
                                         <li>Continuous access to stored data regardless of time or location</li>
+                                        <li>Advanced analytics to provide insights to improve services to Gopher Industries customers </li>
                                     </s.FeatureListWhite>
                                 </s.ProductText>
                                 <s.ProductText>
@@ -84,6 +86,7 @@ const Apollo = () => {
                                 <s.ProductText>
                                     <s.FeatureListWhite>
                                         <li>Universal data security standards across Gopher Industries (i.e., no weak links)</li>
+                                        <li>Increased efficiency in Gopher Industries with a reduction in data duplication.</li>
                                     </s.FeatureListWhite>
                                 </s.ProductText>
                             </s.ProductSubColumnsWhite>

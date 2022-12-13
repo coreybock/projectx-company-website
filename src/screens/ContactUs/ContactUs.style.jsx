@@ -64,7 +64,7 @@ export const ContactPageForm = styled.div`
 export const ContactUsVideo = styled.video`
   width: 100%;
   height:420px;
-  object-fit: none;
+  object-fit: unset;
   position: fixed;
   left: 0;
   right: 0;
